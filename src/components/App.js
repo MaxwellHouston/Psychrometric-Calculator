@@ -9,7 +9,7 @@ export class App extends React.Component{
     super(props);
     this.state = {
       tempInput: null,
-      solveFor: 'dp'
+      solveFor: 'temp'
     };
     this.changeTemp = this.changeTemp.bind(this);
     this.getType = this.getType.bind(this);
@@ -43,7 +43,9 @@ export class App extends React.Component{
           <FinderDropdown getType={this.getType} />
         </div>
         <div className="entry">
-          <EntryForm />
+          <EntryForm
+          tempInput={this.state.tempInput}
+          solveFor={this.state.solveFor} />
         </div>
       </div>
     )
