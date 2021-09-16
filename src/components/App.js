@@ -65,25 +65,26 @@ export class App extends React.Component{
     return(
       <div className="body">
         <h1>Psychrometric Calculator</h1>
-        <div className="about-div">
-          <p className="about">
+        <div className="container">
+          <p className="about box">
             This Psychrometric Calculator takes in two inputs that you have and solves for the missing third value.
             Depending on what inputs you have available, select which value to calculate from the dropdown menu.
             Enter your values and hit submit to calculate the third value.
           </p>
-        </div>
-        <div className="options">
-          <ModeSelect changeTemp={this.changeTemp} />
-          <FinderDropdown getType={this.getType} />
-        </div>
-        <div className="entry">
-          <EntryForm
-          tempInput={this.state.tempInput}
-          solveFor={this.state.solveFor}  
-          handleInput={this.handleInput}
-          inputs={inputs} 
-          showResults={this.showResults}
-          />
+        
+          <div className="options box">
+            <ModeSelect changeTemp={this.changeTemp} />
+            <FinderDropdown getType={this.getType} />
+          </div>
+          <div className="entry box">
+            <EntryForm
+            tempInput={this.state.tempInput}
+            solveFor={this.state.solveFor}  
+            handleInput={this.handleInput}
+            inputs={inputs} 
+            showResults={this.showResults}
+            />
+          </div>
         </div>
         <div className="results">
           <ResultDisplay 

@@ -1,4 +1,5 @@
 import React from "react";
+import './FinderDropdown.css';
 
 
 export class FinderDropdown extends React.Component{
@@ -14,9 +15,9 @@ export class FinderDropdown extends React.Component{
 
     render(){
         return(
-            <div>
-                    <label for="calculate">Calculate:</label>
-                <select id="calculate" name="calculate" onChange={this.handleChange} >
+            <div className='dropdown'>
+                    <h2>Calculate For:</h2>
+                <select name="calculate" onChange={this.handleChange} >
                     <option value="dp">DewPoint</option>
                     <option value="rh">Relative Humidity</option>
                     <option value="temp">Temperature</option>

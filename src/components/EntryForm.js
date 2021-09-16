@@ -1,4 +1,5 @@
 import React from "react";
+import './EntryForm.css';
 
 
 export class EntryForm extends React.Component{

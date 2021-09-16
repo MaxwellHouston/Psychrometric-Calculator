@@ -1,4 +1,5 @@
 import React from "react";
+import './ModeSelect.css';
 
 
 export class ModeSelect extends React.Component{
@@ -16,7 +17,7 @@ export class ModeSelect extends React.Component{
         return(
             <div>
                 <form onChange={this.handleChange}>
-                    <p>Choose Temperature Input</p>
+                    <h2>Choose Temperature Input</h2>
                     <input type="radio" id="fahrenheit" name="tempInput" value="fahrenheit" />
                     <label for="fahrenheit"> Fahrenheit </label>
                     <input type="radio" id="celsius" name="tempInput" value="celsius" />
