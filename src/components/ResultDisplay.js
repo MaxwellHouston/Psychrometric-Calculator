@@ -1,5 +1,5 @@
 import React from 'react';
-import './ResultDisplay.css';
+import './App.css';
 import Library from '../Utility/Library';
 
 export const ResultDisplay = (props) => {
@@ -8,7 +8,8 @@ export const ResultDisplay = (props) => {
     const tStyle = props.tempInput;
     const { rh, temp, dp } = props.inputs;
     const display = {
-        display: props.display
+        display: props.display,
+        textDecoration: 'underline #ff3b3f'
     }
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import './EntryForm.css';
+import './App.css';
 
 
 export class EntryForm extends React.Component{
@@ -24,7 +24,7 @@ export class EntryForm extends React.Component{
         let solveFor = this.props.solveFor;
         const { rh,dp,temp } = this.props.inputs;
         return(
-            <div>
+            <div className='entry'>
                 <form onSubmit={this.handleSubmit}>
                     <label for='dp'>Dew Point:</label>
                     {solveFor==='dp' ? <input type='text' id='dp' value='' disabled /> : 

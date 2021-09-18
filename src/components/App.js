@@ -66,11 +66,13 @@ export class App extends React.Component{
       <div className="body">
         <h1>Psychrometric Calculator</h1>
         <div className="container">
-          <p className="about box">
+          <div className="about box">
+          <p className="text">
             This Psychrometric Calculator takes in two inputs that you have and solves for the missing third value.
             Depending on what inputs you have available, select which value to calculate from the dropdown menu.
             Enter your values and hit submit to calculate the third value.
-          </p>
+            </p>
+          </div>
         
           <div className="options box">
             <ModeSelect changeTemp={this.changeTemp} />

@@ -1,5 +1,5 @@
 import React from "react";
-import './FinderDropdown.css';
+import './App.css';
 
 
 export class FinderDropdown extends React.Component{
