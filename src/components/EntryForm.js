@@ -34,7 +34,7 @@ export class EntryForm extends React.Component{
                     {solveFor==='rh' ? <input type='text' id='rh' value='' disabled /> : 
                     <input type='text' id='rh' name='rh' onChange={this.handleChange} value={rh} />}                
                     <br/>
-                    <label for='temp'>Temprature:</label>
+                    <label for='temp'>Temperature:</label>
                     {solveFor==='temp' ? <input type='text' id='temp' value='' disabled /> : 
                     <input type='text' id='temp' name='temp' onChange={this.handleChange} value={temp} />} 
                     <br/>
